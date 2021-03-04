@@ -1,4 +1,4 @@
-baseURL = "http://tahoeninjas.blog/"
+baseURL = "https://hugoabernier.github.io/blog/"
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"

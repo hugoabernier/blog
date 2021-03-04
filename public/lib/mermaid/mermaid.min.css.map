@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "mermaid.min.css",
-	"sourceRoot": "D:/Users/hugoa/OneDrive/github/TahoeNinjas.blog",
+	"sourceRoot": "D:/github/blog",
 	"sources": [
 		"themes/uBlogger/assets/lib/mermaid/mermaid.scss",
 		"themes/uBlogger/assets/lib/mermaid/themes/neutral/index.scss",

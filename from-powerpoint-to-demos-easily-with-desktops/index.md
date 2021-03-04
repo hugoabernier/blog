@@ -1,4 +1,4 @@
-# From Powerpoint to Demos Easily With Desktops
+# From PowerPoint to Demos Easily With Desktops
 
 
 ## Introduction

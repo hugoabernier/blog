@@ -28,7 +28,7 @@ theme = "uBlogger"
         # you can add extra information after the name (HTML format is supported), such as icons
         post = ""
         name = "Posts"
-        url = "/posts/"
+        url = /blog/posts/"
         # title will be shown when you hover on this menu link.
         title = ""
         weight = 1
@@ -37,7 +37,7 @@ theme = "uBlogger"
         pre = ""
         post = ""
         name = "Tags"
-        url = "/tags/"
+        url = /blog/tags/"
         title = ""
         weight = 2
       [[languages.en.menu.main]]
@@ -45,7 +45,7 @@ theme = "uBlogger"
         pre = ""
         post = ""
         name = "Categories"
-        url = "/categories/"
+        url = /blog/categories/"
         title = ""
         weight = 3
       [[languages.en.menu.main]]
@@ -53,7 +53,7 @@ theme = "uBlogger"
         pre = ""
         post = ""
         name = "About"
-        url = "/about/"
+        url = "/blog/about/"
         title = ""
         weight = 5
       [[languages.en.menu.main]]

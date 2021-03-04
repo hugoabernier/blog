@@ -1,6 +1,6 @@
 ---
 weight: 3
-title: "From Powerpoint to Demos Easily With Desktops"
+title: "From PowerPoint to Demos Easily With Desktops"
 date: 2021-02-07T19:56:25-05:00
 draft: false
 resources:

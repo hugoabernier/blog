@@ -1,0 +1,57 @@
+{{- $share := (.Scratch.Get "params").share | default dict -}}
+
+{{- if $share.enable -}}
+
+<div class="pk-share-buttons-wrap pk-share-buttons-layout-default pk-share-buttons-scheme-default pk-share-buttons-has-counts pk-share-buttons-has-total-counts pk-share-buttons-after-post pk-share-buttons-mode-cached"
+    data-post-id="34"
+    data-share-url="https://authentictheme.com/authentic/2019/04/24/what-makes-your-citys-style-unique/">
+    {{/*  <div class="pk-share-buttons-total">
+        <div class="pk-share-buttons-title pk-font-primary">Total</div>
+        <div class="pk-share-buttons-count pk-font-heading">748</div>
+        <div class="pk-share-buttons-label pk-font-secondary">Shares</div>
+    </div>  */}}
+    <div class="pk-share-buttons-items">
+
+        {{- /* 002: Facebook */ -}}
+{{- if $share.Facebook -}}
+        <div class="pk-share-buttons-item pk-share-buttons-facebook pk-share-buttons-item-count" data-id="facebook"> <a
+                href="https://www.facebook.com/sharer.php?u={{ .Permalink }}"
+                class="pk-share-buttons-link" target="_blank"> <i
+                    class="pk-share-buttons-icon pk-icon pk-icon-facebook"></i> <span
+                    class="pk-share-buttons-label pk-font-primary">Share</span> 
+                </a></div>
+                    {{- end -}}
+
+        {{/*  <div class="pk-share-buttons-item pk-share-buttons-pinterest pk-share-buttons-item-count" data-id="pinterest">
+            <a href="https://pinterest.com/pin/create/bookmarklet/?url=https://authentictheme.com/authentic/2019/04/24/what-makes-your-citys-style-unique/&amp;media=https://authentictheme.com/authentic/wp-content/uploads/sites/2/2017/10/authentic-demo-image-00020-1160x1160.jpg"
+                class="pk-share-buttons-link" target="_blank"> <i
+                    class="pk-share-buttons-icon pk-icon pk-icon-pinterest"></i> <span
+                    class="pk-share-buttons-label pk-font-primary">Pin it</span> <span
+                    class="pk-share-buttons-count pk-font-secondary">598</span> </a></div>  */}}
+{{- /* 001: Twitter */ -}}
+{{- if $share.Twitter -}}
+
+<div class="pk-share-buttons-item pk-share-buttons-twitter pk-share-buttons-no-count" data-id="twitter"> <a title="{{ T `shareOn` }} Twitter"
+    href="https://twitter.com/share?&amp;text={{ .Title }}&amp;url={{ .Permalink }}"
+    class="pk-share-buttons-link" target="_blank" data-url="{{ .Permalink }}" data-title="{{ .Title }}" {{ with .Site.Params.Social.Twitter }} data-via="{{ . }}" {{
+        end }}{{ with .Params.tags }} data-hashtags="{{ delimit . `,` }}" {{ end }}> <i
+        class="pk-share-buttons-icon pk-icon pk-icon-twitter"></i> <span
+        class="pk-share-buttons-label pk-font-primary">Tweet</span> 
+        {{/*  <span
+        class="pk-share-buttons-count pk-font-secondary">0</span>   */}}
+    </a>
+    </div>
+
+{{- end -}}
+
+        <div class="pk-share-buttons-item pk-share-buttons-mail pk-share-buttons-no-count" data-id="mail"> <a
+                href="mailto:?subject={{ .Title }}&amp;body={{ .Title }}%20{{ .Permalink }}"
+                class="pk-share-buttons-link" target="_blank"> <i
+                    class="pk-share-buttons-icon pk-icon pk-icon-mail"></i> <span
+                    class="pk-share-buttons-label pk-font-primary">Share</span></a></div>
+    </div>
+</div>
+</section>
+
+
+{{- end -}}

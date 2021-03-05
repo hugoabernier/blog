@@ -72,7 +72,7 @@
                             </li>
                             {{- end -}}
 
-                            {{/*  {{- $authorName := $params.author | default .Site.Author.name | default " " -}}
+                            {{/* {{- $authorName := $params.author | default .Site.Author.name | default " " -}}
                             {{- if not (eq $authorName " ") -}}
                             {{ $author := index .Site.Data.authors $authorName }}
                             {{- $authorLink := $author.link | default .Site.Home.RelPermalink -}}
@@ -81,7 +81,7 @@
                                 "author" "Icon" (dict "Class" "fas fa-user-circle fa-fw") "Content" $author.nickname -}}
                                 {{- partial "plugin/link.html" $options -}}
                             </li>
-                            {{- end -}}  */}}
+                            {{- end -}} */}}
 
                             <li class="meta-readingtime">
                                 {{ T "readingTime" $.ReadingTime }}
@@ -168,14 +168,6 @@
         <div id="toc-final"></div>
     </article>
 
-    {{- with .Params.tags -}}
-    <div class="{{ if $toc.keepStatic }} post-tags {{ else }} post-tags post-tags-toc {{ end }}">
-        {{- range $index, $value := . -}}
-        {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}}
-        <a href="{{ $tag.RelPermalink }}" class="tag">{{ $tag.Title }}</a>
-        {{- end -}}
-    </div>
-    {{- end -}}
 
     {{- $comment := .Site.Params.Comment -}}
     {{- if $comment.enable -}}

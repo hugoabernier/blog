@@ -353,7 +353,7 @@ theme = "uBlogger"
     [params.page.share]
       enable = true
       Twitter = true
-      Facebook = false
+      Facebook = true
       Linkedin = false
       Whatsapp = false
       Pinterest = false

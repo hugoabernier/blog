@@ -6,6 +6,8 @@ draft: false
 resources:
 - name: "featured-image"
   src: "featured-image.jpg"
+- name: "featured-image-preview"
+  src: "featured-image-preview.jpg"  
 
 tags: ["powerpoint", "presentation", "windows"]
 categories: ["Consulting"]

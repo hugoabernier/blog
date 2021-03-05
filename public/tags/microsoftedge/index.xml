@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>microsoftedge - Tag - Tahoe Ninjas</title>
+        <link>https://hugoabernier.github.io/blog/tags/microsoftedge/</link>
+        <description>microsoftedge - Tag - Tahoe Ninjas</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 06 Feb 2021 17:14:00 -0500</lastBuildDate><atom:link href="https://hugoabernier.github.io/blog/tags/microsoftedge/" rel="self" type="application/rss+xml" /><item>
+    <title>Launching Edge with different profiles using shortcuts</title>
+    <link>https://hugoabernier.github.io/blog/launching-edge-with-different-profiles-using-shortcuts/</link>
+    <pubDate>Sat, 06 Feb 2021 17:14:00 -0500</pubDate>
+    <author>hugoabernier.en</author>
+    <guid>https://hugoabernier.github.io/blog/launching-edge-with-different-profiles-using-shortcuts/</guid>
+    <description><![CDATA[<p>Find out how you create create shortcuts that will launch your Edge browser with a different profile. Bonus: find out how to configure your Stream Deck buttons to launch Edge, Teams, and conference calls using different browsers.</p>]]></description>
+</item></channel>
+</rss>

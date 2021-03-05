@@ -212,7 +212,7 @@ theme = "uBlogger"
   [params.comment]
     enable = true
     [params.comment.remark42]
-      enable = true
+      enable = false
       host = "https://comments.upagge.ru"
       site = "documentation"
       locale = "en"
@@ -277,11 +277,11 @@ theme = "uBlogger"
       enable = false
     # Utterances comment config (https://utteranc.es/)
     [params.comment.utterances]
-      enable = false
+      enable = true
       # owner/repo
-      repo = ""
+      repo = "hugoabernier/blog"
       issueTerm = "pathname"
-      label = ""
+      label = "Comment"
       lightTheme = "github-light"
       darkTheme = "github-dark"
   # Page config

@@ -112,7 +112,7 @@ one = "One word"
 other = "{{ .Count }} words"
 
 [readingTime]
-one = "One minute"
+one = "Less than a minute"
 other = "{{ .Count }} minutes"
 
 [views]

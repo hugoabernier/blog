@@ -1,0 +1,14 @@
+<div class="meta-category">
+    <ul class="post-categories">
+    {{- with $.Params.categories -}}
+    {{- $category := index . 0 -}}
+    {{- with $category -}}
+    {{- $category = partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
+<li>
+    <a href="{{ $category.RelPermalink }}" rel="category tag">{{ $category.Title }} </a>
+</li>
+
+    {{- end -}}
+    {{- end -}}
+</ul>
+</div>

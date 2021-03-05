@@ -79,7 +79,7 @@ article {
 
   .content-block {
     border-radius: $article-border-radius;
-    box-shadow: (0 0 1.5rem 0 rgba(0, 0, 0, .1));
+    // box-shadow: (0 0 1.5rem 0 rgba(0, 0, 0, .1));
 
     h2:first-child, h3:first-child {
       margin-top: 20px;
@@ -454,7 +454,7 @@ a.post-tag-summary {
 
 .header-post {
 
-  box-shadow: 0 -0.9rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+  // box-shadow: 0 -0.9rem 1.5rem 0 rgba(0, 0, 0, 0.1);
   margin: 6rem 1rem 0;
   max-width: 900px;
   width: 100%;
@@ -616,7 +616,7 @@ footer {
 .theme-full, .theme-classic, .theme-wide {
   .content-block-first {
     margin-top: 0 !important;
-    box-shadow: 0 1.2rem 1.2rem 0 rgba(0,0,0,0.1);
+    // box-shadow: 0 1.2rem 1.2rem 0 rgba(0,0,0,0.1);
   }
 }
 
@@ -628,7 +628,9 @@ footer {
     margin: 0 !important;
 
     h1 {
-      font-size: 2.1rem !important;
+      font-size: 3rem;
+      letter-spacing: -0.05em;
+      text-transform: none;
     }
 
     .featured-image {
@@ -720,7 +722,7 @@ footer {
     display: flex !important;
     justify-content: space-between;
     border-radius: 6px;
-    box-shadow: 0 0 1em 0 rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+    // box-shadow: 0 0 1em 0 rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
     color: $single-link-color;
     padding: 1.25rem;
 

@@ -3,10 +3,190 @@
 // ==============================
 $global-background-color-dark: #282c35;
 
-$header-background-color: #ececec;
+$header-background-color: #fff;
 
 $global-font-color-dark: #DDD;
 
 $global-color-accent: #759741;
 
-$global-link-hover-color: #759741;
+$global-link-hover-color: #A0A0A0;
+$global-link-color: #000000;
+
+$global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$global-font-size: 1rem;
+
+$global-font-color: #212529;
+$global-background-color: #ffffff;
+
+html {
+    font-family: $global-font-family;
+    font-weight: $global-font-weight;
+    font-display: swap;
+    font-size: $global-font-size;
+    line-height: $global-line-height;
+    width:100%;
+    -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  a {
+	transition: color 0.2s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	line-height: 1.125;
+}
+
+h2 {
+    font-size: 1.5rem!important;
+    letter-spacing: -0.05em!important;
+    text-transform: none;
+    font-weight: 600;
+}
+
+body {
+    line-height: 1.9rem;
+  }
+  
+  .header-logo {
+    color: #000!important; //$global-color-accent;
+    font-family: Montserrat;
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -0.125rem;
+      line-height: 1;
+      text-transform: none;
+  }
+
+  .menu-item {
+    font-family: Montserrat;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.0125em;
+    text-transform: uppercase;
+  }
+
+  .header-post .single-title {
+    font-family: Montserrat;
+    font-size: 3rem!important;
+    letter-spacing: -0.05em!important;
+    font-weight: 600!important;
+    text-align: center;
+    border-bottom: none!important;
+  }
+
+  
+/*--------------------------------------------------------------
+## Post Meta
+--------------------------------------------------------------*/
+/**
+ * Post Meta
+ * ----------------------------------------------------------------------------
+ */
+.post-meta {
+	padding-left: 0;
+	list-style: none;
+	color: #dee2e6!important;
+	padding: 0;
+	margin: 0;
+}
+
+.post-meta li {
+	display: inline-block;
+}
+
+.post-meta li + li {
+	margin-left: 0.5rem;
+}
+
+.post-meta li + li:before {
+	margin-right: 0.5rem;
+	content: "\b7";
+}
+
+.post-meta .cs-icon {
+	margin-right: 0.25rem;
+}
+
+.meta-category .post-categories {
+    color: #777777!important;
+	padding-left: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    text-align: center;
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    font-family: Montserrat;
+}
+
+.meta-category .post-categories li {
+	display: inline-block;
+}
+
+.meta-category .post-categories li + li {
+	margin-left: 0.5rem;
+}
+
+.meta-category .post-categories li:not(:last-child):after {
+	content: ",";
+}
+
+.post-meta .meta-category .post-categories {
+	margin-bottom: 0;
+}
+
+.meta-author span + a,
+.meta-author a + span {
+	margin-left: 0.25rem;
+}
+
+.meta-separator + *,
+* + .meta-separator {
+	margin-left: 0.25rem;
+}
+
+.post-meta-line {
+    text-align: center;
+
+    font-family: Montserrat;
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #000!important;
+    a {
+      display:none;
+    }
+  }
+
+  .post-category {
+      display: none;
+  }
+
+  .post-meta-line i {
+    //   display: none;
+
+      &:before {
+        margin-right: .5rem;
+        content: "\b7";
+    }
+  }
+
+  .header-mark {
+      display: none;
+  }

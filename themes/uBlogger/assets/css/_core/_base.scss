@@ -5,6 +5,8 @@ html {
   font-size: $global-font-size;
   line-height: $global-line-height;
   width:100%;
+  -webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* scrollbar, only support webkit */
@@ -27,6 +29,19 @@ html {
   [theme=dark] & {
     background-color: $selection-color-dark;
   }
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block;
 }
 
 body {
